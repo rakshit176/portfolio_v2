@@ -51,7 +51,7 @@ def test_rag_state_optional_fields_can_be_none():
 
 def test_workflow_compiles_successfully():
     """Workflow should compile without errors."""
-    from graph.workflow import build_graph
+    from graph import build_graph
 
     graph = build_graph()
 
@@ -62,7 +62,7 @@ def test_workflow_compiles_successfully():
 
 def test_workflow_entry_point_is_router():
     """Router should be the entry point."""
-    from graph.workflow import build_graph
+    from graph import build_graph
 
     graph = build_graph()
 

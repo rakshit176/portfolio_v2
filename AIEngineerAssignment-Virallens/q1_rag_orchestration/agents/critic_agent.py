@@ -46,7 +46,7 @@ async def critic_agent(state: RAGState) -> Dict[str, Any]:
     )
 
     # Get evaluation
-    llm = get_llm(provider="groq", model="llama3-8b-8192")
+    llm = get_llm(provider="groq", model="llama-3.1-8b-instant")
     response = await llm.ainvoke(prompt)
 
     # Parse JSON response

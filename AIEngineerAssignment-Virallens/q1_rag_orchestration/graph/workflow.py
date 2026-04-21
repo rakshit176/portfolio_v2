@@ -6,7 +6,7 @@ from agents.retriever_agent import retriever_agent
 from agents.reasoning_agent import reasoning_agent
 from agents.critic_agent import critic_agent
 
-def build_graph():
+def _build_graph():
     """
     Build and compile the LangGraph workflow.
 
