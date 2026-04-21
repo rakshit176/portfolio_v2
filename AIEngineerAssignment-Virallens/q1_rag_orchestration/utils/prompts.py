@@ -12,12 +12,12 @@ ROUTER_SYSTEM = """You are a query classification agent. Analyze the incoming qu
 2. If factual or conversational, decompose into sub-queries if needed.
 
 Respond in JSON format:
-{
+{{
     "query_type": "factual|conversational|ambiguous",
     "sub_queries": ["sub-question 1", "sub-question 2"],
     "route": "retriever|reasoner|clarify",
     "reasoning": "brief explanation"
-}
+}}
 """
 
 ROUTER_PROMPT = ChatPromptTemplate.from_messages([
@@ -35,12 +35,12 @@ Requirements:
 - Assess your confidence as "low", "medium", or "high"
 
 Respond in JSON format:
-{
+{{
     "answer": "your answer here",
     "citations": ["chunk_id_1", "chunk_id_2"],
     "confidence": "low|medium|high",
     "reasoning_trace": "your internal reasoning"
-}
+}}
 """
 
 RAG_PROMPT = ChatPromptTemplate.from_messages([
@@ -66,7 +66,7 @@ Score each category and provide a verdict:
 - Total < 4: "escalate"
 
 Respond in JSON format:
-{
+{{
     "faithfulness_score": 0-3,
     "completeness_score": 0-3,
     "coherence_score": 0-2,
@@ -74,7 +74,7 @@ Respond in JSON format:
     "verdict": "approve|retry|escalate",
     "critique": "specific feedback for retry (if applicable)",
     "final_answer": "approved answer (if verdict is approve)"
-}
+}}
 """
 
 CRITIC_PROMPT = ChatPromptTemplate.from_messages([
