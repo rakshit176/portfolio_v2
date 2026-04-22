@@ -1,0 +1,14 @@
+{
+  "documents": 5,
+  "chunks": 688,
+  "baseline_best_silhouette": 0.076,
+  "custom_best_silhouette": 0.0696,
+  "improvement_pct": -6.49,
+  "plots": [
+    "/home/z/my-project/q2_custom_embedder/outputs/plots/tsne_comparison.png",
+    "/home/z/my-project/q2_custom_embedder/outputs/plots/silhouette_comparison.png",
+    "/home/z/my-project/q2_custom_embedder/outputs/plots/similarity_analysis.png",
+    "/home/z/my-project/q2_custom_embedder/outputs/plots/cluster_distribution.png",
+    "/home/z/my-project/q2_custom_embedder/outputs/plots/neighbor_overlap.png"
+  ]
+}
